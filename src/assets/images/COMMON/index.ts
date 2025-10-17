@@ -30,8 +30,18 @@ const icon_arrow_left = require('./icon_arrow_left.png');
 const icon_arrow_right = require('./icon_arrow_right.png');
 const icon_location = require('./icon_location.png');
 const icon_phone = require('./icon_phone.png');
+const icon_location_default = require('./icon_location_default.png');
+const ic_add_primary = require('./ic_add_primary.png');
+const icon_delete = require('./icon_delete.png');
+const ph_abstract_bold = require('./ph_abstract_bold.png');
+const ph_add_bold = require('./ph_add_bold.png');
 
 const IMAGES_COMMON = {
+  ph_abstract_bold,
+  ph_add_bold,
+  icon_delete,
+  ic_add_primary,
+  icon_location_default,
   icon_phone,
   icon_location,
   icon_arrow_right,

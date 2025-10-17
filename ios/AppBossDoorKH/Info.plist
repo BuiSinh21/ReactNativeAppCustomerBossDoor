@@ -28,7 +28,10 @@
 	<string>Ứng dụng cần quyền truy cập vị trí để xác định vị trí hiện tại của bạn.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Ứng dụng cần quyền truy cập vị trí để hoạt động chính xác.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Ứng dụng cần quyền lưu ảnh vào thư viện</string>
 	<key>NSAppTransportSecurity</key>
+	
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>

@@ -1,4 +1,4 @@
-import { Image, StyleProp, TouchableOpacity, ViewStyle } from 'react-native';
+import { Image, ImageStyle, StyleProp, TouchableOpacity, ViewStyle } from 'react-native';
 import React from 'react';
 import sty from '../../themes/sty';
 import TextDisplay from '../TextDisplay';
@@ -18,6 +18,7 @@ interface ButtonCustomProps {
   borderColor?: string;
   iconImage?: any;
   iconImageAfter?: any;
+  styleImageAfter?: StyleProp<ImageStyle>,
 }
 
 const ButtonCustom = ({
@@ -34,7 +35,8 @@ const ButtonCustom = ({
   backgroundColor,
   borderColor,
   iconImage,
-  iconImageAfter
+  iconImageAfter,
+  styleImageAfter
 
 }: ButtonCustomProps) => {
   return (
@@ -70,7 +72,7 @@ const ButtonCustom = ({
         }}
       />
       {
-        iconImageAfter && <Image source={iconImageAfter} style={[sty.w_22, sty.h_22]} />
+        iconImageAfter && <Image source={iconImageAfter} style={styleImageAfter ? styleImageAfter : [sty.w_22, sty.h_22]} />
       }
     </TouchableOpacity>
   );
